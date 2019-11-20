@@ -2,7 +2,7 @@
 FROM fcrespel/base-image:opensuse15
 
 # Arguments
-ARG ACTIVEMQ_VERSION=5.15.8
+ARG ACTIVEMQ_VERSION=5.15.10
 ARG ACTIVEMQ_URL=http://archive.apache.org/dist/activemq/${ACTIVEMQ_VERSION}/apache-activemq-${ACTIVEMQ_VERSION}-bin.tar.gz
 
 # Environment
