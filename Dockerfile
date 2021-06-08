@@ -1,5 +1,5 @@
-# ActiveMQ server based on openSUSE 15
-FROM fcrespel/base-image:opensuse15
+# ActiveMQ server based on openSUSE 15.2
+FROM fcrespel/base-image:opensuse15.2
 
 # Arguments
 ARG ACTIVEMQ_VERSION=5.15.10
