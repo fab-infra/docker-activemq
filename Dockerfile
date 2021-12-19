@@ -1,8 +1,8 @@
-# ActiveMQ server based on openSUSE 15.2
-FROM ghcr.io/fab-infra/base-image:opensuse15.2
+# ActiveMQ server based on openSUSE 15.3
+FROM ghcr.io/fab-infra/base-image:opensuse15.3
 
 # Arguments
-ARG ACTIVEMQ_VERSION=5.15.10
+ARG ACTIVEMQ_VERSION=5.15.15
 ARG ACTIVEMQ_URL=http://archive.apache.org/dist/activemq/${ACTIVEMQ_VERSION}/apache-activemq-${ACTIVEMQ_VERSION}-bin.tar.gz
 
 # Environment
