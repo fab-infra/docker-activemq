@@ -20,8 +20,7 @@ RUN mkdir -p /opt/activemq /opt/activemq/tmp &&\
 
 # Files
 COPY ./root /
-RUN chmod +x /run.sh &&\
-	groupadd activemq &&\
+RUN groupadd activemq &&\
 	useradd -d /opt/activemq -g activemq -s /bin/bash activemq &&\
 	chmod a+rw /etc/passwd /etc/group &&\
 	chown -R activemq:activemq /opt/activemq &&\
