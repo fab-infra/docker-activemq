@@ -1,15 +1,15 @@
-# ActiveMQ server based on openSUSE 15.3
-FROM ghcr.io/fab-infra/base-image:opensuse15.3
+# ActiveMQ server based on openSUSE 15.4
+FROM ghcr.io/fab-infra/base-image:opensuse15.4
 
 # Arguments
-ARG ACTIVEMQ_VERSION=5.15.15
-ARG ACTIVEMQ_URL=http://archive.apache.org/dist/activemq/${ACTIVEMQ_VERSION}/apache-activemq-${ACTIVEMQ_VERSION}-bin.tar.gz
+ARG ACTIVEMQ_VERSION=5.17.2
+ARG ACTIVEMQ_URL=https://archive.apache.org/dist/activemq/${ACTIVEMQ_VERSION}/apache-activemq-${ACTIVEMQ_VERSION}-bin.tar.gz
 
 # Environment
 ENV ACTIVEMQ_ADMIN_PASSWORD=admin
 
 # Java
-RUN zypper in -y java-1_8_0-openjdk-headless &&\
+RUN zypper in -y java-11-openjdk-headless &&\
 	zypper clean -a
 
 # ActiveMQ
