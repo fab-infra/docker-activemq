@@ -16,7 +16,8 @@ RUN zypper in -y java-11-openjdk-headless &&\
 RUN mkdir -p /opt/activemq /opt/activemq/tmp &&\
 	curl -fsSL -o /tmp/apache-activemq.tar.gz ${ACTIVEMQ_URL} &&\
 	tar -xzf /tmp/apache-activemq.tar.gz -C /opt/activemq --strip-components=1 &&\
-	rm -f /tmp/apache-activemq.tar.gz
+	rm -f /tmp/apache-activemq.tar.gz &&\
+	sed -i 's#name="host" value="127.0.0.1"#name="host" value="0.0.0.0"#g' /opt/activemq/conf/jetty.xml
 
 # Files
 COPY ./root /
