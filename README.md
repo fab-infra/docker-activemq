@@ -21,7 +21,7 @@ The following environment variables can be used with this container.
 
 | Variable | Description | Default value |
 | -------- | ----------- | ------------- |
-| ACTIVEMQ_ADMIN_PASSWORD | HTTP admin user password | admin |
+| ACTIVEMQ_ADMIN_PASSWORD | HTTP admin user password | (random) |
 
 ## Volumes
 
