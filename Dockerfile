@@ -1,5 +1,5 @@
 # ActiveMQ Classic
-FROM apache/activemq-classic:6.1.6
+FROM apache/activemq-classic:6.2.0
 
 # Files
 COPY ./root /
